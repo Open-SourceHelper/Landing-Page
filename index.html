@@ -9,64 +9,66 @@
   <meta name="author" content="NeuroSync" />
   <title>Kinemo · Cuidar es un trabajo en equipo</title>
   <link rel="stylesheet" href="styles.css" />
+  <script src="translations.js" defer></script>
+  <script src="i18n.js" defer></script>
   <script src="script.js" defer></script>
 </head>
-<body>
-  <a class="skip" href="#main-content">Ir al contenido</a>
+<body data-page="home">
+  <a class="skip" href="#main-content" data-i18n="skip">Ir al contenido</a>
   <header class="header" id="home"><div class="wrap header-inner">
-    <a href="#home" class="logo" aria-label="Kinemo, ir al inicio">kinemo<span>.</span></a>
-    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-controls="main-nav" aria-expanded="false"><span></span><span></span><span></span></button>
-    <nav class="nav" id="main-nav" aria-label="Navegación principal"><a href="#solution">La solución</a><a href="#audience">Para quién</a><a href="#how-it-works">Cómo funciona</a><a href="#faq">Preguntas</a><a class="nav-app" href="https://kinemo-neurosync.web.app">Ir a la aplicación ↗</a></nav>
-    <a class="btn btn-primary header-cta" href="https://kinemo-neurosync.web.app">Ir a la aplicación <span aria-hidden="true">↗</span></a>
+    <a href="#home" class="logo" aria-label="Kinemo, ir al inicio" data-i18n-aria="aria.home">kinemo<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" data-i18n-aria="menu.open" aria-controls="main-nav" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" id="main-nav" aria-label="Navegación principal" data-i18n-aria="aria.mainNav"><a href="#solution" data-i18n="nav.solution">La solución</a><a href="#audience" data-i18n="nav.audience">Para quién</a><a href="#how-it-works" data-i18n="nav.howItWorks">Cómo funciona</a><a href="#faq" data-i18n="nav.faq">Preguntas</a><a class="nav-app" href="https://kinemo-neurosync.web.app" data-i18n="nav.app">Ir a la aplicación ↗</a></nav>
+    <a class="btn btn-primary header-cta" href="https://kinemo-neurosync.web.app" data-i18n="cta.app">Ir a la aplicación <span aria-hidden="true">↗</span></a>
   </div></header>
   <main id="main-content">
     <section class="hero wrap" aria-labelledby="hero-title"><div class="hero-copy">
-      <p class="eyebrow">CADA NIÑO, SU PROPIA FORMA DE CRECER</p>
-      <h1 id="hero-title">Cuidar es un<br>trabajo en<br><em>equipo.</em></h1>
-      <p class="lead">Lo que ayuda a tu hijo, al alcance de quienes lo cuidan. Guías prácticas, rutinas visuales y un entorno conectado, contigo en cada paso.</p>
-      <div class="hero-actions"><a class="btn btn-primary" href="https://kinemo-neurosync.web.app">Empieza ahora <span aria-hidden="true">↗</span></a><a class="btn btn-secondary" href="#how-it-works">Descubre cómo funciona</a></div>
-      <p class="small-note">Para padres, abuelos, tíos, cuidadores y profesionales que acompañan.</p>
-    </div><div class="hero-visual" aria-label="Vista ilustrativa de las rutinas que propone Kinemo">
-      <p class="eyebrow">UN MISMO CUIDADO, EN CADA MOMENTO</p>
-      <div class="mockup"><div class="mockup-tag">kinemo. / Vista ilustrativa</div>
-      <h2>Pequeños pasos,<br>grandes momentos.</h2>
-      <div class="routine"><span class="routine-icon">☀</span><div><strong>Empezamos el día</strong><small>Un paso a la vez</small></div><span class="done" aria-label="Completado">✓</span></div>
-      <div class="routine"><span class="routine-icon">✦</span><div><strong>Tiempo de aprender</strong><small>Con sus apoyos visuales</small></div><span class="done" aria-label="Completado">✓</span></div>
-      <div class="routine"><span class="routine-icon">☁</span><div><strong>Una pausa a su ritmo</strong><small>Espacio para descansar</small></div><span class="done" aria-label="Completado">✓</span></div>
-      </div><div class="visual-footer">Todos en la misma página <span aria-hidden="true">✳</span></div>
+      <p class="eyebrow" data-i18n="hero.eyebrow">CADA NIÑO, SU PROPIA FORMA DE CRECER</p>
+      <h1 id="hero-title" data-i18n="hero.title">Cuidar es un<br>trabajo en<br><em>equipo.</em></h1>
+      <p class="lead" data-i18n="hero.lead">Lo que ayuda a tu hijo, al alcance de quienes lo cuidan. Guías prácticas, rutinas visuales y un entorno conectado, contigo en cada paso.</p>
+      <div class="hero-actions"><a class="btn btn-primary" href="https://kinemo-neurosync.web.app" data-i18n="hero.start">Empieza ahora <span aria-hidden="true">↗</span></a><a class="btn btn-secondary" href="#how-it-works" data-i18n="hero.discover">Descubre cómo funciona</a></div>
+      <p class="small-note" data-i18n="hero.note">Para padres, abuelos, tíos, cuidadores y profesionales que acompañan.</p>
+    </div><div class="hero-visual" aria-label="Vista ilustrativa de las rutinas que propone Kinemo" data-i18n-aria="aria.visual">
+      <p class="eyebrow" data-i18n="visual.eyebrow">UN MISMO CUIDADO, EN CADA MOMENTO</p>
+      <div class="mockup"><div class="mockup-tag" data-i18n="visual.tag">kinemo. / Vista ilustrativa</div>
+      <h2 data-i18n="visual.title">Pequeños pasos,<br>grandes momentos.</h2>
+      <div class="routine"><span class="routine-icon">☀</span><div><strong data-i18n="visual.step1.title">Empezamos el día</strong><small data-i18n="visual.step1.text">Un paso a la vez</small></div><span class="done" aria-label="Completado" data-i18n-aria="aria.completed">✓</span></div>
+      <div class="routine"><span class="routine-icon">✦</span><div><strong data-i18n="visual.step2.title">Tiempo de aprender</strong><small data-i18n="visual.step2.text">Con sus apoyos visuales</small></div><span class="done" aria-label="Completado" data-i18n-aria="aria.completed">✓</span></div>
+      <div class="routine"><span class="routine-icon">☁</span><div><strong data-i18n="visual.step3.title">Una pausa a su ritmo</strong><small data-i18n="visual.step3.text">Espacio para descansar</small></div><span class="done" aria-label="Completado" data-i18n-aria="aria.completed">✓</span></div>
+      </div><div class="visual-footer" data-i18n="visual.footer">Todos en la misma página <span aria-hidden="true">✳</span></div>
     </div></section>
-    <div class="stripe"><div class="wrap stripe-inner"><span>Un espacio para acompañar la diversidad</span><strong>Autismo (TEA) / TDAH / Síndrome de Down</strong></div></div>
-    <section class="section wrap" id="solution" aria-labelledby="solution-title"><p class="eyebrow">MENOS INCERTIDUMBRE, MÁS CONEXIÓN</p><h2 id="solution-title">Lo que necesitan.<br><span>Justo cuando lo necesitan.</span></h2><p class="section-intro">Las recomendaciones no deberían quedarse en el consultorio. Kinemo propone llevarlas al día a día de toda la familia.</p><div class="cards three">
-      <article class="feature card"><div class="icon-card">✳</div><h3>Guías para acompañar</h3><p>Pautas personalizadas y fáciles de consultar para que cada cuidador conozca cómo apoyar al niño.</p></article>
-      <article class="feature card"><div class="icon-card">▦</div><h3>Rutinas a su ritmo</h3><p>Actividades con apoyos visuales para organizar el día y anticipar lo que viene.</p></article>
-      <article class="feature card"><div class="icon-card">♡</div><h3>Una red que acompaña</h3><p>Familiares, cuidadores y psicólogos conectados alrededor de las mismas pautas de cuidado.</p></article>
+    <div class="stripe"><div class="wrap stripe-inner"><span data-i18n="stripe.text">Un espacio para acompañar la diversidad</span><strong data-i18n="stripe.conditions">Autismo (TEA) / TDAH / Síndrome de Down</strong></div></div>
+    <section class="section wrap" id="solution" aria-labelledby="solution-title"><p class="eyebrow" data-i18n="solution.eyebrow">MENOS INCERTIDUMBRE, MÁS CONEXIÓN</p><h2 id="solution-title" data-i18n="solution.title">Lo que necesitan.<br><span>Justo cuando lo necesitan.</span></h2><p class="section-intro" data-i18n="solution.intro">Las recomendaciones no deberían quedarse en el consultorio. Kinemo propone llevarlas al día a día de toda la familia.</p><div class="cards three">
+      <article class="feature card"><div class="icon-card">✳</div><h3 data-i18n="solution.guides.title">Guías para acompañar</h3><p data-i18n="solution.guides.text">Pautas personalizadas y fáciles de consultar para que cada cuidador conozca cómo apoyar al niño.</p></article>
+      <article class="feature card"><div class="icon-card">▦</div><h3 data-i18n="solution.routines.title">Rutinas a su ritmo</h3><p data-i18n="solution.routines.text">Actividades con apoyos visuales para organizar el día y anticipar lo que viene.</p></article>
+      <article class="feature card"><div class="icon-card">♡</div><h3 data-i18n="solution.network.title">Una red que acompaña</h3><p data-i18n="solution.network.text">Familiares, cuidadores y psicólogos conectados alrededor de las mismas pautas de cuidado.</p></article>
     </div></section>
-    <section class="people-section" id="audience"><div class="wrap"><p class="eyebrow">CADA PERSONA CUENTA</p><h2>Un niño. Todo un equipo.</h2><div class="cards three profiles">
-      <article><span class="number">01</span><h3>Padres y madres</h3><p>Reúne las necesidades, preferencias y rutinas de tu hijo en una guía para las personas de tu confianza.</p><a class="btn btn-secondary segment-cta" href="https://kinemo-neurosync.web.app/child-profile">Registra a tu hijo <span aria-hidden="true">↗</span></a></article>
-      <article><span class="number">02</span><h3>Familiares y cuidadores</h3><p>Consulta las pautas acordadas con la familia y conoce lo que ayuda al niño en cada momento.</p><a class="btn btn-secondary segment-cta" href="https://kinemo-neurosync.web.app/routine-activity/routines">Consulta sus rutinas <span aria-hidden="true">↗</span></a></article>
-      <article><span class="number">03</span><h3>Psicólogos</h3><p>Organiza recomendaciones personalizadas y conoce las observaciones de quienes acompañan al niño.</p><a class="btn btn-secondary segment-cta" href="https://kinemo-neurosync.web.app/clinical-guidance">Crea pautas clínicas <span aria-hidden="true">↗</span></a></article>
+    <section class="people-section" id="audience"><div class="wrap"><p class="eyebrow" data-i18n="audience.eyebrow">CADA PERSONA CUENTA</p><h2 data-i18n="audience.title">Un niño. Todo un equipo.</h2><div class="cards three profiles">
+      <article><span class="number">01</span><h3 data-i18n="audience.parents.title">Padres y madres</h3><p data-i18n="audience.parents.text">Reúne las necesidades, preferencias y rutinas de tu hijo en una guía para las personas de tu confianza.</p><a class="btn btn-secondary segment-cta" href="https://kinemo-neurosync.web.app/child-profile" data-i18n="audience.parents.cta">Registra a tu hijo <span aria-hidden="true">↗</span></a></article>
+      <article><span class="number">02</span><h3 data-i18n="audience.caregivers.title">Familiares y cuidadores</h3><p data-i18n="audience.caregivers.text">Consulta las pautas acordadas con la familia y conoce lo que ayuda al niño en cada momento.</p><a class="btn btn-secondary segment-cta" href="https://kinemo-neurosync.web.app/routine-activity/routines" data-i18n="audience.caregivers.cta">Consulta sus rutinas <span aria-hidden="true">↗</span></a></article>
+      <article><span class="number">03</span><h3 data-i18n="audience.psychologists.title">Psicólogos</h3><p data-i18n="audience.psychologists.text">Organiza recomendaciones personalizadas y conoce las observaciones de quienes acompañan al niño.</p><a class="btn btn-secondary segment-cta" href="https://kinemo-neurosync.web.app/clinical-guidance" data-i18n="audience.psychologists.cta">Crea pautas clínicas <span aria-hidden="true">↗</span></a></article>
     </div></div></section>
-    <section class="section wrap" id="how-it-works"><p class="eyebrow">ASÍ ESTÁ PENSADO KINEMO</p><h2>Del consultorio a la vida cotidiana.</h2><div class="cards three steps"><article><span class="number">01</span><h3>Conoce sus necesidades</h3><p>Familia y profesional reúnen lo que hace único el cuidado del niño.</p></article><article><span class="number">02</span><h3>Organiza su guía</h3><p>Las pautas se convierten en instrucciones claras y rutinas visuales.</p></article><article><span class="number">03</span><h3>Comparte el cuidado</h3><p>El entorno autorizado consulta la misma información y aporta sus observaciones.</p></article></div></section>
-    <section class="section wrap plans" id="plans"><p class="eyebrow">PARA CADA RED DE CUIDADO</p><h2>Dos formas de acompañar.</h2><p class="section-intro">Elige la modalidad que se adapta a tu rol y suscríbete desde la aplicación.</p><div class="cards two">
-      <article class="plan card"><h3>Plan familiar</h3><p>Guías, rutinas y una red de apoyo alrededor del niño.</p><p class="price">Desde <strong>S/19.90 al mes</strong></p><a class="btn btn-secondary" href="https://kinemo-neurosync.web.app/subscription-payment/plans">Elegir plan familiar ↗</a></article>
-      <article class="plan card"><h3>Plan profesional</h3><p>Pautas personalizadas y observaciones para acompañar a las familias.</p><p class="price">Desde <strong>S/49.90 al mes</strong></p><a class="btn btn-secondary" href="https://kinemo-neurosync.web.app/subscription-payment/plans">Elegir plan profesional ↗</a></article>
+    <section class="section wrap" id="how-it-works"><p class="eyebrow" data-i18n="how.eyebrow">ASÍ ESTÁ PENSADO KINEMO</p><h2 data-i18n="how.title">Del consultorio a la vida cotidiana.</h2><div class="cards three steps"><article><span class="number">01</span><h3 data-i18n="how.step1.title">Conoce sus necesidades</h3><p data-i18n="how.step1.text">Familia y profesional reúnen lo que hace único el cuidado del niño.</p></article><article><span class="number">02</span><h3 data-i18n="how.step2.title">Organiza su guía</h3><p data-i18n="how.step2.text">Las pautas se convierten en instrucciones claras y rutinas visuales.</p></article><article><span class="number">03</span><h3 data-i18n="how.step3.title">Comparte el cuidado</h3><p data-i18n="how.step3.text">El entorno autorizado consulta la misma información y aporta sus observaciones.</p></article></div></section>
+    <section class="section wrap plans" id="plans"><p class="eyebrow" data-i18n="plans.eyebrow">PARA CADA RED DE CUIDADO</p><h2 data-i18n="plans.title">Dos formas de acompañar.</h2><p class="section-intro" data-i18n="plans.intro">Elige la modalidad que se adapta a tu rol y suscríbete desde la aplicación.</p><div class="cards two">
+      <article class="plan card"><h3 data-i18n="plans.family.title">Plan familiar</h3><p data-i18n="plans.family.text">Guías, rutinas y una red de apoyo alrededor del niño.</p><p class="price" data-i18n="plans.family.price">Desde <strong>S/19.90 al mes</strong></p><a class="btn btn-secondary" href="https://kinemo-neurosync.web.app/subscription-payment/plans" data-i18n="plans.family.cta">Elegir plan familiar ↗</a></article>
+      <article class="plan card"><h3 data-i18n="plans.professional.title">Plan profesional</h3><p data-i18n="plans.professional.text">Pautas personalizadas y observaciones para acompañar a las familias.</p><p class="price" data-i18n="plans.professional.price">Desde <strong>S/49.90 al mes</strong></p><a class="btn btn-secondary" href="https://kinemo-neurosync.web.app/subscription-payment/plans" data-i18n="plans.professional.cta">Elegir plan profesional ↗</a></article>
     </div></section>
-    <section class="section wrap faq" id="faq"><p class="eyebrow">RESOLVEMOS TUS DUDAS</p><h2>Conozcámonos un poco más.</h2><div class="faq-list">
-      <details open><summary>¿Qué es Kinemo?</summary><p>Una propuesta de NeuroSync para compartir guías prácticas, rutinas visuales y pautas de cuidado personalizadas.</p></details>
-      <details><summary>¿Solo pueden usarlo los padres?</summary><p>También está pensado para abuelos, tíos, cuidadores y psicólogos autorizados por la familia.</p></details>
-      <details><summary>¿Reemplaza al profesional?</summary><p>No. Ayuda a organizar y compartir las pautas personalizadas del profesional que acompaña al niño.</p></details>
-      <details><summary>¿Cómo empiezo a usar Kinemo?</summary><p>Ingresa a la <a href="https://kinemo-neurosync.web.app">aplicación web</a>, registra el perfil de tu hijo y elige el plan que corresponde a tu rol: familiar o profesional.</p></details>
+    <section class="section wrap faq" id="faq"><p class="eyebrow" data-i18n="faq.eyebrow">RESOLVEMOS TUS DUDAS</p><h2 data-i18n="faq.title">Conozcámonos un poco más.</h2><div class="faq-list">
+      <details open><summary data-i18n="faq.q1">¿Qué es Kinemo?</summary><p data-i18n="faq.a1">Una propuesta de NeuroSync para compartir guías prácticas, rutinas visuales y pautas de cuidado personalizadas.</p></details>
+      <details><summary data-i18n="faq.q2">¿Solo pueden usarlo los padres?</summary><p data-i18n="faq.a2">También está pensado para abuelos, tíos, cuidadores y psicólogos autorizados por la familia.</p></details>
+      <details><summary data-i18n="faq.q3">¿Reemplaza al profesional?</summary><p data-i18n="faq.a3">No. Ayuda a organizar y compartir las pautas personalizadas del profesional que acompaña al niño.</p></details>
+      <details><summary data-i18n="faq.q4">¿Cómo empiezo a usar Kinemo?</summary><p data-i18n="faq.a4">Ingresa a la <a href="https://kinemo-neurosync.web.app">aplicación web</a>, registra el perfil de tu hijo y elige el plan que corresponde a tu rol: familiar o profesional.</p></details>
     </div></section>
-    <section class="closing"><div class="wrap"><p class="eyebrow">CADA PEQUEÑO PASO CUENTA</p><h2>Más conexión.<br>Más formas de acompañar.</h2><a class="btn btn-white" href="https://kinemo-neurosync.web.app">Empieza con Kinemo ↗</a></div></section>
+    <section class="closing"><div class="wrap"><p class="eyebrow" data-i18n="closing.eyebrow">CADA PEQUEÑO PASO CUENTA</p><h2 data-i18n="closing.title">Más conexión.<br>Más formas de acompañar.</h2><a class="btn btn-white" href="https://kinemo-neurosync.web.app" data-i18n="closing.cta">Empieza con Kinemo ↗</a></div></section>
   </main>
   <footer class="site-footer">
     <div class="wrap footer">
-      <div class="footer-brand"><a class="logo" href="#home">kinemo<span>.</span></a><p>Cuidar es un trabajo en equipo. Una iniciativa de NeuroSync.</p></div>
-      <nav class="footer-column" aria-label="Secciones"><h3>Explora</h3><a href="#solution">La solución</a><a href="#audience">Para quién</a><a href="#how-it-works">Cómo funciona</a><a href="#faq">Preguntas</a></nav>
-      <nav class="footer-column" aria-label="Aplicación"><h3>Aplicación</h3><a href="https://kinemo-neurosync.web.app">Ir a la aplicación</a><a href="https://kinemo-neurosync.web.app/child-profile">Perfil del niño</a><a href="https://kinemo-neurosync.web.app/subscription-payment/plans">Planes</a></nav>
-      <nav class="footer-column" aria-label="Legal"><h3>Legal</h3><a href="terms.html">Términos y condiciones</a><a href="terms.html#privacy">Privacidad y datos</a></nav>
-      <div class="footer-column" id="contact"><h3>Contáctanos</h3><a href="mailto:u202212327@upc.edu.pe">u202212327@upc.edu.pe</a><a href="https://github.com/Open-SourceHelper" target="_blank" rel="noopener">GitHub · Open-SourceHelper</a><p>Lima, Perú</p></div>
+      <div class="footer-brand"><a class="logo" href="#home">kinemo<span>.</span></a><p data-i18n="footer.tagline">Cuidar es un trabajo en equipo. Una iniciativa de NeuroSync.</p></div>
+      <nav class="footer-column" aria-label="Secciones" data-i18n-aria="aria.sections"><h3 data-i18n="footer.explore">Explora</h3><a href="#solution" data-i18n="nav.solution">La solución</a><a href="#audience" data-i18n="nav.audience">Para quién</a><a href="#how-it-works" data-i18n="nav.howItWorks">Cómo funciona</a><a href="#faq" data-i18n="nav.faq">Preguntas</a></nav>
+      <nav class="footer-column" aria-label="Aplicación" data-i18n-aria="aria.application"><h3 data-i18n="footer.application">Aplicación</h3><a href="https://kinemo-neurosync.web.app" data-i18n="footer.app">Ir a la aplicación</a><a href="https://kinemo-neurosync.web.app/child-profile" data-i18n="footer.childProfile">Perfil del niño</a><a href="https://kinemo-neurosync.web.app/subscription-payment/plans" data-i18n="footer.plans">Planes</a></nav>
+      <nav class="footer-column" aria-label="Legal" data-i18n-aria="aria.legal"><h3 data-i18n="footer.legal">Legal</h3><a href="terms.html" data-i18n="footer.terms">Términos y condiciones</a><a href="terms.html#privacy" data-i18n="footer.privacy">Privacidad y datos</a></nav>
+      <div class="footer-column" id="contact"><h3 data-i18n="footer.contact">Contáctanos</h3><a href="mailto:u202212327@upc.edu.pe">u202212327@upc.edu.pe</a><a href="https://github.com/Open-SourceHelper" target="_blank" rel="noopener">GitHub · Open-SourceHelper</a><p data-i18n="footer.location">Lima, Perú</p></div>
     </div>
-    <div class="wrap footer-bottom"><p>© 2026 NeuroSync · Proyecto académico · UPC</p><a href="#home" class="back-top">Volver arriba ↑</a></div>
+    <div class="wrap footer-bottom"><p data-i18n="footer.copyright">© 2026 NeuroSync · Proyecto académico · UPC</p><a href="#home" class="back-top" data-i18n="footer.backTop">Volver arriba ↑</a></div>
   </footer>
 </body></html>
