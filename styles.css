@@ -664,39 +664,55 @@ summary:focus-visible {
 
 /* Language switcher */
 
+.header-inner {
+    justify-content: flex-start;
+}
+
+.header-inner > .nav {
+    margin-inline: auto;
+}
+
 .lang-switch {
     display: inline-flex;
-    padding: 3px;
+    align-items: center;
+    gap: 2px;
+    padding: 4px;
 
-    border: 1px solid var(--line);
+    border: 1.5px solid #e2d3f3;
     border-radius: 999px;
-    background: var(--white);
+    background: var(--light);
 }
 
 .lang-switch button {
-    min-width: 40px;
-    min-height: 34px;
-    padding: 0 10px;
+    min-width: 42px;
+    min-height: 36px;
+    padding: 0 12px;
 
     border: 0;
     border-radius: 999px;
     background: transparent;
 
     font: inherit;
-    font-size: 12px;
-    font-weight: 750;
-    letter-spacing: 0.06em;
-    color: var(--muted);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    color: var(--purple);
     cursor: pointer;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }
 
 .lang-switch button[aria-pressed="true"] {
     background: var(--purple);
     color: var(--white);
+    box-shadow: 0 6px 16px rgba(91, 45, 142, 0.28);
 }
 
 .lang-switch button:hover:not([aria-pressed="true"]) {
-    color: var(--purple);
+    background: #eadcf8;
+}
+
+.header-inner > .lang-switch + .header-cta {
+    margin-left: 4px;
 }
 
 /* Call to actions */
