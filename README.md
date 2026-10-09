@@ -3,9 +3,23 @@
 Landing informativa independiente de la aplicación Kinemo, iniciativa de NeuroSync.
 
 ## Estructura
-- `index.html`: contenido y navegación.
+- `index.html`: contenido, navegación y footer.
+- `terms.html`: términos y condiciones.
 - `styles.css`: estilos adaptables a escritorio y móvil.
 - `script.js`: menú móvil.
+
+## Enlaces
+- Landing page: https://open-sourcehelper.github.io/Landing-Page/
+- Aplicación web: https://kinemo-neurosync.web.app
+
+Los call-to-action de cada segmento llevan a su vista en la aplicación:
+
+| Segmento | Vista |
+|---|---|
+| Padres y madres | `/child-profile` |
+| Familiares y cuidadores | `/routine-activity/routines` |
+| Psicólogos | `/clinical-guidance` |
+| Planes | `/subscription-payment/plans` |
 
 ## Desarrollo
 Abre `index.html` en el navegador. No requiere instalar paquetes ni iniciar un backend.
@@ -13,8 +27,10 @@ Abre `index.html` en el navegador. No requiere instalar paquetes ni iniciar un b
 ## Publicación en GitHub Pages
 En el repositorio, entra a **Settings → Pages → Build and deployment**, selecciona **Deploy from a branch**, la rama `main` y la carpeta `/ (root)`, y guarda.
 
-## Alcance
-Esta landing es informativa. No incluye registro, inicio de sesión, pagos ni suscripciones reales. Los planes y precios son referenciales y están sujetos a confirmación.
+## GitFlow
+- `main`: versión publicada en GitHub Pages.
+- `develop`: integración de cambios.
+- `feature/<nombre>`: nuevas funcionalidades, se integran a `develop`.
 
 ## Diseño de referencia
 https://www.figma.com/design/vt1v9OvUphIXLI6A9MGjKd/
