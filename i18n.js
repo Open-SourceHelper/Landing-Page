@@ -52,8 +52,15 @@
         document.documentElement.lang = currentLanguage;
 
         document.querySelectorAll('[data-i18n]').forEach((element) => {
-            element.innerHTML = translate(element.dataset.i18n);
+            const key = element.dataset.i18n;
+            const translation = translations[currentLanguage]?.[key]
+                ?? translations[DEFAULT_LANGUAGE]?.[key];
+
+            if (translation !== undefined) {
+                element.innerHTML = translation;
+            }
         });
+
         document.querySelectorAll('[data-i18n-aria]').forEach((element) => {
             element.setAttribute('aria-label', translate(element.dataset.i18nAria));
         });
