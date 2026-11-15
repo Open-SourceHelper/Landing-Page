@@ -1078,3 +1078,58 @@ summary:focus-visible {
         transition: none;
     }
 }
+/* Product introduction and live application preview */
+body[data-page="home"] .hero {
+    grid-template-columns: minmax(0, .95fr) minmax(0, 1.22fr);
+    gap: clamp(28px, 5vw, 68px);
+    padding-block: clamp(45px, 7vw, 91px) clamp(38px, 6vw, 76px);
+}
+
+.hero h1 { font-size: clamp(2.5rem, 5.1vw, 4.55rem); line-height: 1.02; color: #271840; }
+.hero h1 em { color: #6b39a4; }
+.hero-copy .eyebrow { margin-bottom: 18px; }
+.hero-copy .lead { font-size: clamp(1.05rem, 1.65vw, 1.21rem); line-height: 1.65; }
+
+.hero-visual.product-preview {
+    min-width: 0;
+    min-height: 0;
+    margin: 0;
+    padding: clamp(12px, 2.2vw, 24px);
+    background: radial-gradient(ellipse at top right, #f2e3fb, #ece5fb 55%, #e9e2f7);
+    border: 1px solid #ded0ee;
+    border-radius: 26px;
+}
+.preview-frame {
+    overflow: hidden;
+    border: 1px solid #e2d7ef;
+    border-radius: 15px;
+    background: #f8f5fb;
+    box-shadow: 0 14px 34px #39225521;
+}
+.preview-chrome {
+    min-height: 34px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0 12px;
+    background: #fff;
+    border-bottom: 1px solid #ece4f2;
+}
+.preview-chrome span { width: 6px; height: 6px; border-radius: 50%; background: #ba9dcc; }
+.preview-chrome b { margin-left: auto; font-size: .72rem; color: #593583; }
+.preview-frame img { display: block; width: 100%; height: auto; }
+.product-preview figcaption { margin: 14px 4px 2px; color: #4d3668; font-size: .84rem; line-height: 1.4; }
+body[data-page="home"] #how-it-works { background: #f8f3fc; border-radius: 24px; padding-inline: clamp(16px, 4vw, 54px); }
+body[data-page="home"] .steps article { background: #fff; border: 1px solid #e5dbef; border-radius: 18px; }
+body[data-page="home"] .plans { opacity: 1; }
+body[data-page="home"] .closing { background: linear-gradient(120deg, #49257c, #3b2359); }
+
+@media (max-width: 970px) {
+    body[data-page="home"] .hero { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+    body[data-page="home"] .hero { padding-block: 38px; }
+    .hero h1 { font-size: clamp(2.3rem, 10vw, 3.25rem); }
+    .hero-visual.product-preview { border-radius: 18px; }
+    .product-preview figcaption { font-size: .78rem; }
+}
