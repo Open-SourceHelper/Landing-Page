@@ -12,7 +12,7 @@ Landing informativa independiente de la aplicación Kinemo, iniciativa de NeuroS
 
 ## Enlaces
 - Landing page: https://open-sourcehelper.github.io/Landing-Page/
-- Aplicación web: https://kinemo-neurosync.web.app
+- Aplicación web: https://frontend-application-1.onrender.com
 
 Los call-to-action de cada segmento llevan a su vista en la aplicación:
 
